@@ -139,6 +139,7 @@ single-note detection (experimental). Opus audio comes from the `swift-opus` Swi
 
 ## Further reading
 
+- ▶ **Demo video:** [youtube.com/watch?v=5te3okVcKYU](https://www.youtube.com/watch?v=5te3okVcKYU)
 - [LedPianoStrip/README.md](LedPianoStrip/README.md) — firmware, full wiring per board, all 11
   connection methods, message protocol, OTA updates, WLED/Art-Net
 - [LedPianoApple/README.md](LedPianoApple/README.md) — Xcode build notes, USB/MIDI setup
