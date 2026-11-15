@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+._*
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+.idea/
+.kotlin/
+*.apk
+*.aab
+
+# Xcode / Swift
+DerivedData/
+xcuserdata/
+*.xcuserstate
+LedPianoApple/build/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Third-party binaries and local working data (too large / not ours to publish)
+analysis/
+backup-before-redesign/
+Claude outputs/
+*.xapk

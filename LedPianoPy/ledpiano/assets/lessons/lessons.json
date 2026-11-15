@@ -1,0 +1,428 @@
+{
+ "_comment": "Lesson path. Lesson MIDI files in lessons/ are arrangements of public-domain melodies made for this app. \"fingers\": one number per note of that hand, in playing order (0 = none).",
+ "levels": [
+  {
+   "level": 1,
+   "title": "Làm quen 5 ngón",
+   "songs": [
+    {
+     "file": "lessons/l1_five_right.mid",
+     "title": "Năm ngón tay phải",
+     "subtitle": "Đô Rê Mi Fa Sol",
+     "hands": "R",
+     "fingers": {
+      "R": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       4,
+       5,
+       4,
+       3,
+       2,
+       1
+      ]
+     }
+    },
+    {
+     "file": "lessons/l1_five_left.mid",
+     "title": "Năm ngón tay trái",
+     "subtitle": "Đô Rê Mi Fa Sol",
+     "hands": "L",
+     "fingers": {
+      "L": [
+       5,
+       4,
+       3,
+       2,
+       1,
+       2,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    {
+     "file": "lessons/l1_mary.mid",
+     "title": "Mary có một chú cừu non",
+     "subtitle": "Mary Had a Little Lamb",
+     "hands": "R",
+     "fingers": {
+      "R": [
+       3,
+       2,
+       1,
+       2,
+       3,
+       3,
+       3,
+       2,
+       2,
+       2,
+       3,
+       5,
+       5,
+       3,
+       2,
+       1,
+       2,
+       3,
+       3,
+       3,
+       3,
+       2,
+       2,
+       3,
+       2,
+       1
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "title": "Giai điệu đầu tiên",
+   "songs": [
+    {
+     "file": "lessons/l2_kia_con_buom_vang.mid",
+     "title": "Kìa con bướm vàng",
+     "subtitle": "Dân ca (giai điệu Frère Jacques)",
+     "hands": "R",
+     "fingers": {
+      "R": [
+       1,
+       2,
+       3,
+       1,
+       1,
+       2,
+       3,
+       1,
+       3,
+       4,
+       5,
+       3,
+       4,
+       5,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "file": "lessons/l2_twinkle.mid",
+     "title": "Ngôi sao lấp lánh",
+     "subtitle": "Twinkle Twinkle Little Star",
+     "hands": "R"
+    },
+    {
+     "file": "samples/Happy-Birthday.mid",
+     "title": "Chúc mừng sinh nhật",
+     "subtitle": "Happy Birthday",
+     "hands": "LR"
+    }
+   ]
+  },
+  {
+   "level": 3,
+   "title": "Tay phải vững vàng",
+   "songs": [
+    {
+     "file": "lessons/l3_ode_to_joy.mid",
+     "title": "Khúc hoan ca (tay phải)",
+     "subtitle": "Beethoven — Ode to Joy",
+     "hands": "R",
+     "fingers": {
+      "R": [
+       3,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       3,
+       2,
+       2,
+       3,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       2,
+       1,
+       1
+      ]
+     }
+    },
+    {
+     "file": "lessons/l3_five_both.mid",
+     "title": "Năm ngón hai tay",
+     "subtitle": "Hai tay cùng đi lên, đi xuống",
+     "hands": "LR",
+     "fingers": {
+      "R": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       4,
+       5,
+       4,
+       3,
+       2,
+       1
+      ],
+      "L": [
+       5,
+       4,
+       3,
+       2,
+       1,
+       2,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "level": 4,
+   "title": "Hai tay cùng chơi",
+   "songs": [
+    {
+     "file": "lessons/l4_ode_both.mid",
+     "title": "Khúc hoan ca (hai tay)",
+     "subtitle": "Beethoven — Ode to Joy",
+     "hands": "LR",
+     "fingers": {
+      "R": [
+       3,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       3,
+       2,
+       2,
+       3,
+       3,
+       4,
+       5,
+       5,
+       4,
+       3,
+       2,
+       1,
+       1,
+       2,
+       3,
+       2,
+       1,
+       1
+      ],
+      "L": [
+       5,
+       1,
+       5,
+       1,
+       5,
+       1,
+       5,
+       1,
+       5
+      ]
+     }
+    },
+    {
+     "file": "lessons/l4_twinkle_both.mid",
+     "title": "Ngôi sao lấp lánh (hai tay)",
+     "subtitle": "Tay trái giữ Đô – Fa – Sol",
+     "hands": "LR",
+     "fingers": {
+      "L": [
+       5,
+       2,
+       5,
+       2,
+       5,
+       1,
+       5,
+       5,
+       2,
+       5,
+       1,
+       5,
+       2,
+       5,
+       1,
+       5,
+       2,
+       5,
+       2,
+       5,
+       1,
+       5
+      ]
+     }
+    },
+    {
+     "file": "samples/Hanon---Piano-Excercise-No-01.mid",
+     "title": "Bài tập Hanon số 1",
+     "subtitle": "Luyện ngón đều tay",
+     "hands": "LR"
+    },
+    {
+     "file": "samples/Silent-night.mid",
+     "title": "Đêm thánh vô cùng",
+     "subtitle": "Silent Night — F. Gruber",
+     "hands": "LR"
+    }
+   ]
+  },
+  {
+   "level": 5,
+   "title": "Bài hoàn chỉnh",
+   "songs": [
+    {
+     "file": "lessons/l5_jingle_bells.mid",
+     "title": "Tiếng chuông ngân (điệp khúc)",
+     "subtitle": "Jingle Bells — J. Pierpont",
+     "hands": "LR",
+     "fingers": {
+      "R": [
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       3,
+       5,
+       1,
+       2,
+       3,
+       4,
+       4,
+       4,
+       4,
+       4,
+       3,
+       3,
+       3,
+       3,
+       3,
+       2,
+       2,
+       3,
+       2,
+       5
+      ],
+      "L": [
+       5,
+       5,
+       5,
+       5,
+       2,
+       5,
+       1,
+       1
+      ]
+     }
+    },
+    {
+     "file": "samples/Minuet-in-F-Major.mid",
+     "title": "Minuet Fa trưởng",
+     "subtitle": "Mozart",
+     "hands": "LR"
+    },
+    {
+     "file": "samples/Canon-in-D-easy.mid",
+     "title": "Canon Rê trưởng (dễ)",
+     "subtitle": "Pachelbel",
+     "hands": "LR"
+    },
+    {
+     "file": "samples/Green-sleeves.mid",
+     "title": "Greensleeves",
+     "subtitle": "Dân ca Anh",
+     "hands": "LR"
+    }
+   ]
+  }
+ ]
+}

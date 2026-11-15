@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LED alignment wizard: count the LEDs, line the strip up with the keys, check brightness. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alignRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ink"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_back"
+            android:scaleType="center"
+            android:src="@drawable/ic_chevron_back"
+            app:tint="@color/text_hi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/align_title"
+            android:textColor="@color/text_hi"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtAlignStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_hi"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtAlignStatusHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_mid"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlignConnect"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/bt_connect"
+                android:textAllCaps="false"
+                android:textColor="@color/ink"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/text_hi"
+                app:cornerRadius="26dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlignTest"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/bt_test_lights"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/align_step_count"
+                android:textColor="@color/text_hi"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtCountHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/align_count_hint"
+                android:textColor="@color/text_mid"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCountDown"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_minus"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text_hi"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCountUp"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_plus"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/align_step_key"
+                android:textColor="@color/text_hi"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txtKeyHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_mid"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtKeyValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_hi"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShiftLeft"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_left"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShiftRight"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_right"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowMiddleC"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_show_c"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnShowEnds"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_show_ends"
+                android:textAllCaps="false"
+                android:textColor="@color/text_hi"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/surface_2"
+                app:cornerRadius="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/align_step_brightness"
+                android:textColor="@color/text_hi"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <SeekBar
+                android:id="@+id/seekBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:max="255"
+                android:progressBackgroundTint="@color/surface_2"
+                android:progressTint="@color/text_hi"
+                android:thumbTint="@color/text_hi" />
+        </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAlignDone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/align_done"
+                android:textAllCaps="false"
+                android:textColor="@color/ink"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/text_hi"
+                app:cornerRadius="26dp" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

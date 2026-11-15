@@ -1,0 +1,31 @@
+# Build profiles for arduino-cli (Arduino IDE users: pick the same settings in the Tools menu, see README).
+#   arduino-cli compile --profile esp32s3_n16r8      ESP32-S3-DevKitC-1 N16R8
+#   arduino-cli compile --profile esp32_wroom32      ESP32-WROOM-32 dev board
+#   arduino-cli compile --profile esp32c3_supermini  ESP32-C3 Super Mini (4 MB)
+#   add  --upload -p <port>  to upload as well
+profiles:
+  esp32s3_n16r8:
+    notes: ESP32-S3-DevKitC-1 N16R8 – 16 MB flash, 8 MB OPI PSRAM, 8M partition with SPIFFS, USB CDC on boot
+    fqbn: esp32:esp32:esp32s3:FlashSize=16M,PSRAM=opi,PartitionScheme=default_8MB,CDCOnBoot=cdc
+    platforms:
+      - platform: esp32:esp32 (3.3.10)
+        platform_index_url: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+    libraries:
+      - FastLED (3.10.9)
+  esp32_wroom32:
+    notes: ESP32-WROOM-32 dev board – Minimal SPIFFS partition (OTA)
+    fqbn: esp32:esp32:esp32:PartitionScheme=min_spiffs
+    platforms:
+      - platform: esp32:esp32 (2.0.17)
+        platform_index_url: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+    libraries:
+      - FastLED (3.7.8)
+  esp32c3_supermini:
+    notes: ESP32-C3 Super Mini – 4 MB flash, Minimal SPIFFS partition (OTA), USB CDC on boot
+    fqbn: esp32:esp32:esp32c3:FlashSize=4M,PartitionScheme=min_spiffs,CDCOnBoot=cdc
+    platforms:
+      - platform: esp32:esp32 (2.0.17)
+        platform_index_url: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+    libraries:
+      - FastLED (3.7.8)
+default_profile: esp32s3_n16r8

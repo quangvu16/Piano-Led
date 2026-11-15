@@ -1,0 +1,35 @@
+# Backup: if the .xcodeproj does not open in your Xcode, install XcodeGen (brew install xcodegen)
+# and run `xcodegen` in this folder to regenerate LedPiano.xcodeproj.
+name: LedPiano
+options:
+  bundleIdPrefix: com.ledpiano
+  deploymentTarget: { iOS: "17.0", macOS: "14.0" }
+packages:
+  swift-opus:
+    url: https://github.com/alta/swift-opus.git
+    revision: 6f3cb6bd3ffed1fe5f06d00a962d5c191a50daf8
+targets:
+  LedPiano:
+    type: application
+    supportedDestinations: [iOS, macOS]
+    sources: [LedPiano]
+    dependencies:
+      - package: swift-opus
+        product: Opus
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ledpiano.app
+        GENERATE_INFOPLIST_FILE: YES
+        MARKETING_VERSION: 1.1.0
+        CURRENT_PROJECT_VERSION: 2
+        SWIFT_VERSION: 5.0
+        ENABLE_APP_SANDBOX: NO
+        INFOPLIST_KEY_CFBundleDisplayName: LED Piano
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: LED Piano dùng Bluetooth để điều khiển dải đèn LED và nhận nốt từ đàn Bluetooth MIDI.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: LED Piano dùng micro để nghe tiếng đàn (tùy chọn) và để bạn nói tên bài với Xiaozhi.
+        INFOPLIST_FILE: LedPiano-Info.plist
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: LED Piano tìm và điều khiển dải đèn (mạch ESP32 LED Piano Strip, WLED) trong mạng Wi-Fi nhà bạn.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight

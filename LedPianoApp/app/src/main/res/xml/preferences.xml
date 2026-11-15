@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/set_led_section">
+
+        <ListPreference
+            app:defaultValue="legacy_nus"
+            app:entries="@array/led_transport_entries"
+            app:entryValues="@array/led_transport_values"
+            app:key="led_transport"
+            app:summary="%s"
+            app:title="@string/set_led_transport" />
+
+        <ListPreference
+            app:defaultValue="spectrum"
+            app:entries="@array/led_effect_entries"
+            app:entryValues="@array/led_effect_values"
+            app:key="led_effect"
+            app:summary="%s"
+            app:title="@string/set_led_effect" />
+
+        <SeekBarPreference
+            app:defaultValue="180"
+            app:key="led_brightness"
+            android:max="255"
+            app:title="@string/set_led_brightness" />
+
+        <ListPreference
+            app:defaultValue="16"
+            app:entries="@array/led_zone_entries"
+            app:entryValues="@array/led_zone_values"
+            app:key="led_zones"
+            app:summary="%s"
+            app:title="@string/set_led_zones" />
+
+        <SeekBarPreference
+            app:defaultValue="88"
+            app:key="led_length"
+            android:max="150"
+            app:title="@string/set_led_length" />
+
+        <Preference
+            app:key="led_align"
+            app:summary="@string/set_led_align_summary"
+            app:title="@string/bt_align_led" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="led_auto_reconnect"
+            app:title="@string/set_auto_reconnect" />
+
+        <Preference
+            app:key="organ_offset"
+            app:summary="@string/set_organ_offset_summary"
+            app:title="@string/set_organ_offset" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_ws_section">
+        <Preference
+            app:selectable="false"
+            app:summary="@string/set_ws_hint" />
+        <ListPreference
+            app:defaultValue="seq"
+            app:entries="@array/ws_layout_entries"
+            app:entryValues="@array/ws_layout_values"
+            app:key="ws_layout"
+            app:summary="%s"
+            app:title="@string/set_ws_layout" />
+        <SeekBarPreference
+            android:max="300"
+            app:defaultValue="60"
+            app:key="ws_num_leds"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="@string/set_ws_num_leds_summary"
+            app:title="@string/set_ws_num_leds" />
+        <ListPreference
+            app:defaultValue="144"
+            app:entries="@array/ws_density_entries"
+            app:entryValues="@array/ws_density_values"
+            app:key="ws_density"
+            app:summary="%s"
+            app:title="@string/set_ws_density" />
+        <ListPreference
+            app:defaultValue="88"
+            app:entries="@array/ws_keys_entries"
+            app:entryValues="@array/ws_keys_values"
+            app:key="ws_keys"
+            app:summary="%s"
+            app:title="@string/set_ws_keys" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="ws_reversed"
+            app:summary="@string/set_ws_reversed_summary"
+            app:title="@string/set_ws_reversed" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_hand_section">
+        <ListPreference
+            app:defaultValue="#3B82F6"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:key="color_left"
+            app:summary="%s"
+            app:title="@string/set_color_left" />
+        <ListPreference
+            app:defaultValue="#F97316"
+            app:entries="@array/color_entries"
+            app:entryValues="@array/color_values"
+            app:key="color_right"
+            app:summary="%s"
+            app:title="@string/set_color_right" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/set_sound_section">
+        <ListPreference
+            app:defaultValue="0"
+            app:entries="@array/instrument_entries"
+            app:entryValues="@array/instrument_values"
+            app:key="instrument"
+            app:summary="%s"
+            app:title="@string/set_instrument" />
+        <Preference
+            app:selectable="false"
+            app:summary="@string/set_sound_credit" />
+        <SeekBarPreference
+            app:defaultValue="100"
+            app:key="volume"
+            android:max="100"
+            app:title="@string/set_volume" />
+    </PreferenceCategory>
+</PreferenceScreen>

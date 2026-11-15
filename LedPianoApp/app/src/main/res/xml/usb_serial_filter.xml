@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- USB serial chips on ESP32 boards (same list as FriendBot's device_filter.xml): when one is
+     plugged in, Android offers to open LED Piano, which then connects to the strip by itself. -->
+<resources>
+    <!-- 0x303A Espressif: ESP32-S3 / C3 native USB -->
+    <usb-device vendor-id="12346" />
+    <!-- 0x10C4 / 0xEA60: Silicon Labs CP210x (most ESP32-WROOM-32 dev boards) -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <!-- 0x1A86 / 0x7523: WCH CH340 -->
+    <usb-device vendor-id="6790" product-id="29987" />
+    <!-- 0x1A86 / 0x55D3, 0x55D4: WCH CH343 / CH9102 -->
+    <usb-device vendor-id="6790" product-id="21971" />
+    <usb-device vendor-id="6790" product-id="21972" />
+    <!-- 0x2341: Arduino Uno / Mega / Nano Every (Adalight sketch, LedPianoAdalight.ino) -->
+    <usb-device vendor-id="9025" />
+</resources>

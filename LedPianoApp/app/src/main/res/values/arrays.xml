@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="led_transport_entries">
+        <item>@string/set_led_transport_sp611e</item>
+        <item>@string/set_led_transport_legacy</item>
+        <item>@string/set_led_transport_ws2812</item>
+        <item>@string/set_led_transport_wled</item>
+        <item>@string/set_led_transport_sp801e</item>
+        <item>@string/set_led_transport_sp802e</item>
+        <item>@string/set_led_transport_sp630e</item>
+        <item>@string/set_led_transport_e131</item>
+        <item>@string/set_led_transport_ddp</item>
+        <item>@string/set_led_transport_adalight</item>
+    </string-array>
+    <string-array name="led_transport_values">
+        <item>sp611e</item>
+        <item>legacy_nus</item>
+        <item>ws2812</item>
+        <item>wled</item>
+        <item>sp801e</item>
+        <item>sp802e</item>
+        <item>sp630e</item>
+        <item>e131</item>
+        <item>ddp</item>
+        <item>adalight</item>
+    </string-array>
+
+    <string-array name="led_effect_entries">
+        <item>@string/set_led_effect_spectrum</item>
+        <item>@string/set_led_effect_single</item>
+        <item>@string/set_led_effect_full</item>
+    </string-array>
+    <string-array name="led_effect_values">
+        <item>spectrum</item>
+        <item>single</item>
+        <item>full</item>
+    </string-array>
+
+    <string-array name="led_zone_entries">
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="led_zone_values">
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="color_entries">
+        <item>Xanh dương</item>
+        <item>Đỏ</item>
+        <item>Xanh lá</item>
+        <item>Vàng</item>
+        <item>Tím</item>
+        <item>Cyan</item>
+        <item>Cam</item>
+    </string-array>
+    <string-array name="color_values">
+        <item>#3B82F6</item>
+        <item>#EF4444</item>
+        <item>#22C55E</item>
+        <item>#F59E0B</item>
+        <item>#A855F7</item>
+        <item>#06B6D4</item>
+        <item>#F97316</item>
+    </string-array>
+
+    <!-- Instruments in the sound pack (General MIDI programs) -->
+    <string-array name="instrument_entries">
+        <item>Đàn piano · Đàn piano cơ (Grand)</item>
+        <item>Đàn piano · Piano sáng</item>
+        <item>Đàn piano · Piano điện Grand</item>
+        <item>Đàn piano · Piano quán bar (Honky-tonk)</item>
+        <item>Đàn piano · Piano điện Rhodes</item>
+        <item>Đàn piano · Piano điện FM</item>
+        <item>Đàn piano · Đàn Harpsichord</item>
+        <item>Đàn piano · Đàn Clavinet</item>
+        <item>Đàn organ · Organ Hammond</item>
+        <item>Đàn organ · Organ gõ</item>
+        <item>Đàn organ · Organ Rock</item>
+        <item>Đàn organ · Organ nhà thờ</item>
+        <item>Đàn organ · Organ hơi (Reed)</item>
+        <item>Đàn organ · Đàn Accordion</item>
+        <item>Đàn organ · Kèn Harmonica</item>
+        <item>Đàn organ · Accordion Tango</item>
+        <item>Chuông &amp; gõ · Đàn Celesta</item>
+        <item>Chuông &amp; gõ · Chuông Glockenspiel</item>
+        <item>Chuông &amp; gõ · Hộp nhạc</item>
+        <item>Chuông &amp; gõ · Vibraphone</item>
+        <item>Chuông &amp; gõ · Marimba</item>
+        <item>Chuông &amp; gõ · Mộc cầm (Xylophone)</item>
+        <item>Chuông &amp; gõ · Chuông ống</item>
+        <item>Chuông &amp; gõ · Đàn tam thập lục (Dulcimer)</item>
+    </string-array>
+    <string-array name="instrument_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="ws_density_entries">
+        <item>144 LED/mét (khuyên dùng)</item>
+        <item>96 LED/mét</item>
+        <item>74 LED/mét</item>
+        <item>60 LED/mét</item>
+        <item>30 LED/mét (nhiều phím dùng chung 1 đèn)</item>
+    </string-array>
+    <string-array name="ws_density_values">
+        <item>144</item>
+        <item>96</item>
+        <item>74</item>
+        <item>60</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="ws_keys_entries">
+        <item>88 phím (A0–C8)</item>
+        <item>76 phím (E1–G7)</item>
+        <item>61 phím (C2–C7)</item>
+        <item>49 phím (C2–C6)</item>
+    </string-array>
+    <string-array name="ws_layout_entries">
+        <item>1 đèn cho mỗi phím, liên tiếp (không bỏ đèn)</item>
+        <item>Theo vị trí thật của phím (dải LED dày)</item>
+    </string-array>
+    <string-array name="ws_layout_values">
+        <item>seq</item>
+        <item>position</item>
+    </string-array>
+    <string-array name="ws_keys_values">
+        <item>88</item>
+        <item>76</item>
+        <item>61</item>
+        <item>49</item>
+    </string-array>
+</resources>

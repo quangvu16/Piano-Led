@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home screen, portrait. Google-style layout from the Design "Trang chủ" artboard. Landscape: layout-land/activity_main.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textColor="@color/text_hi"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/menu_settings"
+                android:scaleType="center"
+                android:src="@drawable/ic_sliders"
+                app:tint="@color/text_mid" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingBottom="96dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp">
+
+                <LinearLayout
+                    android:id="@+id/ledStatusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center_vertical"
+                    android:minHeight="68dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="14dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp">
+
+                    <ImageView
+                        android:id="@+id/imgLedIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_tile_neutral"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_bluetooth"
+                        app:tint="@color/text_mid" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtLedStatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/home_led_off_title"
+                            android:textColor="@color/text_hi"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtLedHint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/home_led_off_hint"
+                            android:textColor="@color/text_mid"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnConnectLed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:minWidth="0dp"
+                        android:paddingHorizontal="18dp"
+                        android:text="@string/bt_connect"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_on_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/md_primary"
+                        app:cornerRadius="24dp" />
+                </LinearLayout>
+
+                <!-- "Tiếp tục luyện" card -->
+                <LinearLayout
+                    android:id="@+id/cardProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtStreak"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_mid"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtToday"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_mid"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                        <com.ledpiano.app.ui.WeekBarsView
+                            android:id="@+id/weekBars"
+                            android:layout_width="126dp"
+                            android:layout_height="44dp"
+                            android:contentDescription="@string/cd_week" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cardContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_row"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="56dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_continue"
+                                android:textColor="@color/text_mid"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtContinue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/text_hi"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_circle_light"
+                            android:contentDescription="@null"
+                            android:padding="9dp"
+                            android:src="@drawable/ic_play"
+                            app:tint="@color/ink" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/planCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_row"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/plan_title"
+                            android:textColor="@color/text_mid"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/planList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- "Nhanh" quick actions: 2 columns -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/home_quick"
+                    android:textColor="@color/text_mid"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:columnCount="2"
+                    android:useDefaultMargins="false">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnExercises"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/home_exercises"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_soft"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blue_pale"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnVoice"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/voice_home"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_soft"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blue_pale"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnTestLed"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/bt_test_lights"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_soft"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blue_pale"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAlignLed"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/bt_align_led"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_soft"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blue_pale"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnKeyboard"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="4dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingHorizontal="16dp"
+                        android:text="@string/bt_keyboard"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_on_primary_container"
+                        android:textSize="15sp"
+                        app:backgroundTint="@color/blue_container"
+                        app:cornerRadius="16dp" />
+                </GridLayout>
+
+                <!-- "Bài nhạc" list -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/home_your_songs"
+                    android:textColor="@color/text_mid"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerSongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false" />
+
+                <TextView
+                    android:id="@+id/txtEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:minHeight="120dp"
+                    android:text="@string/empty_songs"
+                    android:textColor="@color/text_mid"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!-- Floating "+ Mở file MIDI" button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUploadMidi"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="20dp"
+        android:text="@string/home_open_midi"
+        android:textAllCaps="false"
+        android:textColor="@color/md_on_primary_container"
+        android:textSize="15sp"
+        app:backgroundTint="@color/blue_container"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_upload"
+        app:iconTint="@color/md_on_primary_container" />
+</FrameLayout>

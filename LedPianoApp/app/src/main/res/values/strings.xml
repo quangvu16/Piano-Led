@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Led Piano</string>
+
+    <!-- Main screen -->
+    <string name="bt_upload_midi">Tải tệp Midi</string>
+    <string name="bt_load_song">Bài đã chơi</string>
+    <string name="bt_connect_led">Kết nối đến LED</string>
+    <string name="bt_basic_exercices">Bài tập cơ bản</string>
+    <string name="lb_search">Tìm kiếm</string>
+    <string name="empty_songs">Chưa có bài hát nào.\nNhấn \"Thêm bài hát\" để mở tệp .mid</string>
+    <string name="menu_settings">Cài đặt</string>
+
+    <!-- Player -->
+    <string name="bt_left_hand">Tay trái</string>
+    <string name="bt_right_hand">Tay phải</string>
+    <string name="lb_level">Cấp độ</string>
+    <string name="lb_speed">Tốc độ</string>
+    <string name="lb_except">Trích đoạn</string>
+    <string name="lb_begin">Bắt đầu</string>
+    <string name="lb_end">Kết thúc</string>
+    <string name="lb_loop">Lặp đoạn</string>
+    <string name="lb_play">Phát</string>
+    <string name="lb_pause">Tạm dừng</string>
+    <string name="lb_stop">Dừng</string>
+    <string name="lb_seek">Vị trí</string>
+    <string name="lb_loading_song">Đang mở bản nhạc…</string>
+
+    <!-- LED -->
+    <string name="lb_connect_device">Kết nối với thiết bị</string>
+    <string name="lb_want_connect_device">Bạn muốn kết nối với thiết bị</string>
+    <string name="lb_please_check_connect_device">Vui lòng kiểm tra nguồn điện của thiết bị và ở gần thiết bị</string>
+    <string name="lb_disconnect">Ngắt kết nối</string>
+    <string name="lb_turn_on_bluethooth">Bạn cần bật bluetooth trước khi kết nối với thiết bị</string>
+    <string name="lb_error_when_connect">Lỗi khi kết nối</string>
+    <string name="lb_scanning">Đang quét thiết bị…</string>
+    <string name="lb_found_devices">Tìm thấy %1$d thiết bị</string>
+    <string name="lb_connecting">Đang kết nối…</string>
+    <string name="lb_no_device">Không tìm thấy thiết bị LED nào</string>
+    <string name="lb_connected_to">Đã kết nối</string>
+    <string name="lb_led_offline">Chưa kết nối LED</string>
+    <string name="lb_brightness">Độ sáng</string>
+    <string name="lb_permission_needed">Ứng dụng cần quyền Bluetooth để điều khiển đèn LED</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="set_led_section">Đèn LED</string>
+    <string name="set_led_transport">Giao thức kết nối LED</string>
+    <string name="set_led_transport_sp611e">SP611E (BanlanX) – sáng theo vùng</string>
+    <string name="set_led_transport_legacy">Led Organ – sáng từng phím</string>
+    <string name="set_led_effect">Hiệu ứng LED</string>
+    <string name="set_led_effect_spectrum">Phổ nốt nhạc (nhịp điệu)</string>
+    <string name="set_led_effect_single">Màu đơn sắc theo nốt</string>
+    <string name="set_led_effect_full">Phổ nhiều màu</string>
+    <string name="set_led_brightness">Độ sáng đèn</string>
+    <string name="set_led_zones">Số vùng LED chia bàn phím</string>
+    <string name="set_led_length">Số lượng đèn LED trên dải</string>
+    <string name="set_organ_offset">Phím đầu tiên bên phải cây đàn của bạn là nốt nhạc gì?</string>
+    <string name="set_organ_offset_summary">Dùng để căn chỉnh đèn LED với bàn phím thật</string>
+    <string name="set_hand_section">Màu sắc</string>
+    <string name="set_color_left">Màu tay trái</string>
+    <string name="set_color_right">Màu tay phải</string>
+    <string name="set_sound_section">Âm thanh</string>
+    <string name="set_volume">Âm lượng</string>
+    <string name="set_piano_range">Dải phím đàn (88 phím)</string>
+
+    <!-- Dialogs -->
+    <string name="lb_warning">Cảnh báo</string>
+    <string name="lb_ok">Đồng ý</string>
+    <string name="lb_cancel">Hủy bỏ</string>
+    <string name="lb_yes">Đồng ý</string>
+    <string name="lb_delete">Xóa</string>
+    <string name="lb_choose_start_end_time">Bạn phải chọn thời gian bắt đầu và kết thúc</string>
+    <string name="lb_endtime_longer_starttime">Thời gian kết thúc cần lớn hơn thời gian bắt đầu</string>
+    <string name="lb_music_sheet_not_composed_piano">Bản nhạc này không được sáng tác cho duy nhất 1 cây đàn piano. Nó có thể bao gồm 2 cây đàn piano hoặc nhiều loại nhạc cụ. Bạn có muốn chơi tiếp bản nhạc này không?</string>
+    <string name="lb_error_open_file">Không thể mở tệp MIDI này</string>
+    <string name="lb_level_pattern">Cấp độ %1$d</string>
+
+    <!-- Learner redesign -->
+    <string name="home_led_off_title">Chưa kết nối đèn LED</string>
+    <string name="home_led_off_hint">Bật dải đèn, rồi nhấn Kết nối</string>
+    <string name="home_led_on_title">Đã kết nối đèn LED</string>
+    <string name="home_led_on_hint">Phím sẽ sáng khi bạn chơi</string>
+    <string name="home_led_wait_hint">Vui lòng đợi…</string>
+    <string name="bt_connect">Kết nối</string>
+    <string name="bt_disconnect_short">Ngắt</string>
+    <string name="home_add_song">Thêm bài hát</string>
+    <string name="home_add_song_hint">Mở tệp MIDI</string>
+    <string name="home_exercises">Bài học</string>
+    <string name="home_exercises_hint">Lộ trình 5 cấp độ</string>
+    <string name="home_your_songs">Bài hát của bạn</string>
+    <string name="home_tap_hint">Chạm để luyện tập</string>
+    <string name="lb_delete_song_question">Xóa \"%1$s\" khỏi danh sách?</string>
+    <string name="player_hands">Tay</string>
+    <string name="bt_left_short">Trái</string>
+    <string name="bt_both_hands">Cả hai</string>
+    <string name="bt_right_short">Phải</string>
+    <string name="bt_restart">Về đầu</string>
+    <string name="bt_repeat">Lặp lại</string>
+    <string name="lb_repeat_on">Đang lặp lại 2 ô nhịp từ vị trí này</string>
+    <string name="lb_repeat_off">Đã tắt lặp lại</string>
+    <string name="lb_led_on_short">LED bật</string>
+    <string name="lb_led_off_short">LED tắt</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_led">Đèn LED</string>
+
+    <!-- New learner features -->
+    <string name="bt_test_lights">Thử đèn</string>
+    <string name="set_ws_layout">Cách xếp đèn theo phím</string>
+    <string name="set_ws_num_leds">Số đèn LED trên dải</string>
+    <string name="set_ws_num_leds_summary">Ví dụ 60. Mỗi phím dùng 1 đèn, nên 60 đèn hiện được 60 phím liền nhau.</string>
+    <string name="bt_keyboard">Bàn phím đàn</string>
+    <string name="kb_title">Bàn phím đàn</string>
+    <string name="kb_hint">Chạm vào phím để đánh. Đèn LED trên dải sáng đúng vị trí phím bạn chạm và tắt khi bạn nhả tay.</string>
+    <string name="kb_lower">◀ Trầm hơn</string>
+    <string name="kb_higher">Cao hơn ▶</string>
+    <string name="kb_range">%1$s – %2$s</string>
+    <string name="kb_led_connect">Nối đèn LED</string>
+    <string name="bt_align_led">Căn đèn với phím</string>
+    <string name="home_continue">Tiếp tục bài</string>
+    <string name="home_streak">%1$d ngày liên tiếp</string>
+    <string name="home_streak_zero">Bắt đầu chuỗi ngày luyện tập hôm nay</string>
+    <string name="home_today">Hôm nay: %1$d / %2$d phút</string>
+    <string name="cd_week">Số phút luyện tập 7 ngày qua</string>
+    <string name="cd_loop_range">Đoạn lặp lại, kéo hai đầu để chọn ô nhịp</string>
+    <string name="cd_slower">Chậm hơn</string>
+    <string name="cd_faster">Nhanh hơn</string>
+    <string name="lb_led_needs_connect">Hãy kết nối đèn LED trước</string>
+
+    <string name="opt_title">Tùy chọn luyện tập</string>
+    <string name="opt_mode">Cách luyện</string>
+    <string name="opt_mode_normal">Tự chạy</string>
+    <string name="opt_mode_wait">Chờ phím</string>
+    <string name="opt_mode_step">Từng bước</string>
+    <string name="opt_mode_normal_hint">Bài chạy theo nhịp. Nếu nối đàn, ứng dụng chấm điểm từng nốt.</string>
+    <string name="opt_mode_wait_hint">Bài dừng ở mỗi nốt cho tới khi bạn bấm đúng phím trên đàn (cần nối đàn hoặc bật micro).</string>
+    <string name="opt_mode_step_hint">Bài dừng ở mỗi nốt; chạm vào màn hình hoặc bấm bàn đạp lật trang để đi tiếp.</string>
+    <string name="opt_lights">Đèn hướng dẫn</string>
+    <string name="opt_lights_full">Đầy đủ</string>
+    <string name="opt_lights_fade">Mờ dần</string>
+    <string name="opt_lights_off">Tắt</string>
+    <string name="opt_lights_full_hint">Luôn hiện phím cần bấm.</string>
+    <string name="opt_lights_fade_hint">Đèn mờ dần khi bạn chơi đúng và sáng lại khi sai, để bạn không phụ thuộc vào đèn.</string>
+    <string name="opt_lights_off_hint">Bài kiểm tra: tự chơi không cần đèn.</string>
+    <string name="opt_labels">Tên nốt</string>
+    <string name="opt_label_none">Không</string>
+    <string name="opt_label_c">Chỉ Đô</string>
+    <string name="opt_label_letters">C D E</string>
+    <string name="opt_label_solfege">Đô Rê Mi</string>
+    <string name="opt_more">Khác</string>
+    <string name="opt_count_in">Đếm nhịp trước khi chơi</string>
+    <string name="opt_metronome">Máy đếm nhịp</string>
+    <string name="opt_auto_speed">Tự tăng tốc sau 3 lần lặp đúng</string>
+    <string name="opt_staff">Hiện khuông nhạc</string>
+    <string name="opt_fingers">Hiện số ngón tay</string>
+    <string name="opt_split">Chia tay trái / phải tại</string>
+    <string name="opt_input">Đàn của bạn</string>
+    <string name="opt_input_none">Chưa nối đàn</string>
+    <string name="opt_input_midi">Đã nối đàn: %1$s</string>
+    <string name="opt_input_mic">Đang nghe qua micro</string>
+    <string name="opt_input_hint">Cắm đàn điện vào điện thoại bằng cáp USB OTG — ứng dụng tự nhận. Hoặc dùng đàn có Bluetooth MIDI.</string>
+    <string name="opt_ble_midi">Tìm đàn Bluetooth MIDI</string>
+    <string name="opt_mic">Nghe qua micro (đàn cơ, từng nốt đơn, thử nghiệm)</string>
+    <string name="opt_midi_unsupported">Điện thoại này không hỗ trợ MIDI</string>
+    <string name="opt_midi_failed">Không mở được đàn Bluetooth MIDI</string>
+    <string name="lb_mic_permission">Cần quyền micro để nghe tiếng đàn</string>
+
+    <string name="mode_wait_chip">Chờ phím</string>
+    <string name="mode_step_chip">Từng bước · chạm để đi tiếp</string>
+    <string name="wait_need_input_title">Chế độ Chờ phím cần nối đàn</string>
+    <string name="wait_need_input_msg">Cắm đàn điện bằng cáp USB OTG hoặc Bluetooth MIDI, hoặc bật nghe qua micro. Bạn có muốn dùng chế độ Từng bước (chạm để đi tiếp) thay thế?</string>
+    <string name="wait_use_step">Dùng Từng bước</string>
+    <string name="wait_press">Bấm: %1$s</string>
+    <string name="step_tap">Chạm để đi tiếp</string>
+    <string name="fb_wrong">Sai phím</string>
+    <string name="fb_good">Đúng</string>
+    <string name="fb_late">Trễ %1$d ms</string>
+    <string name="fb_early">Sớm %1$d ms</string>
+    <string name="speed_up_toast">Rất tốt! 3 lần đúng liên tiếp — tăng lên %1$d%%</string>
+    <string name="speed_down_toast">Chậm lại một chút: %1$d%%</string>
+    <string name="pass_toast">Lượt vừa rồi: đúng %1$d%%, sai %2$d phím</string>
+    <string name="result_title">Hoàn thành bài!</string>
+    <string name="result_score">Chính xác %1$d%% (%2$d/%3$d nốt) · %4$d phím sai</string>
+    <string name="result_timing_late">Trung bình bạn chơi trễ %1$d ms.</string>
+    <string name="result_timing_early">Trung bình bạn chơi sớm %1$d ms.</string>
+    <string name="result_timing_ok">Nhịp rất đều!</string>
+    <string name="result_no_input">Bạn đã chơi hết bài. Nối đàn để được chấm điểm.</string>
+    <string name="result_again">Chơi lại</string>
+    <string name="result_next">Bài tiếp theo</string>
+    <string name="result_lights_off">Thử không cần đèn</string>
+
+    <string name="lessons_title">Bài học</string>
+    <string name="lessons_other">Bài mẫu khác</string>
+    <string name="lessons_vietnamese">Bài hát Việt Nam</string>
+    <string name="lessons_english">Bài hát Tiếng Anh</string>
+    <string name="lessons_level">Cấp %1$d · %2$s</string>
+    <string name="lessons_progress">%1$d/%2$d xong</string>
+    <string name="lesson_hands_r">Tay phải</string>
+    <string name="lesson_hands_l">Tay trái</string>
+    <string name="lesson_hands_lr">Hai tay</string>
+    <string name="lesson_best">Tốt nhất %1$d%%</string>
+    <string name="lesson_done">Đã xong</string>
+
+    <string name="align_title">Căn đèn LED</string>
+    <string name="align_not_connected">Chưa kết nối đèn LED</string>
+    <string name="align_not_connected_hint">Bật dải đèn rồi nhấn Kết nối.</string>
+    <string name="align_connected">Đã kết nối: %1$s</string>
+    <string name="align_connected_hint">Làm theo 3 bước bên dưới. Bạn có thể quay lại đây trong Cài đặt.</string>
+    <string name="align_step_count">1. Số đèn trên dải</string>
+    <string name="align_count_hint">Nhấn − / + cho tới khi đèn cuối cùng sáng đúng ở cuối dải.</string>
+    <string name="align_minus">−</string>
+    <string name="align_plus">+</string>
+    <string name="align_step_key">2. Đặt đèn lên phím Đô giữa</string>
+    <string name="align_key_hint_nus">Một đèn đang sáng cho phím Đô giữa (C4). Nhấn ◀ hoặc ▶ cho tới khi nó nằm ngay trên phím Đô giữa của đàn bạn. Nếu đèn chạy ngược chiều, hãy bấm nút còn lại.</string>
+    <string name="align_key_hint_sp611e">Bộ điều khiển SP611E sáng theo 16 vùng chứ không theo từng phím, nên không cần căn từng phím. Hãy dán dải đèn phủ đều toàn bộ bàn phím.</string>
+    <string name="align_key_value">Phím đầu tiên của dải: %1$s</string>
+    <string name="align_left">◀ Sang trái</string>
+    <string name="align_right">Sang phải ▶</string>
+    <string name="align_show_c">Sáng Đô giữa</string>
+    <string name="align_show_ends">Sáng 2 đầu</string>
+    <string name="align_step_brightness">3. Độ sáng</string>
+    <string name="align_done">Xong</string>
+    <string name="set_led_align_summary">Đếm đèn, căn đèn với phím, chỉnh độ sáng</string>
+    <string name="set_auto_reconnect">Tự kết nối lại đèn LED</string>
+
+    <string name="opt_instrument">Âm thanh nhạc cụ</string>
+    <string name="set_instrument">Nhạc cụ</string>
+    <string name="set_sound_credit">Âm thanh thu âm từ GeneralUser GS (S. Christian Collins), dùng miễn phí.</string>
+    <string name="cd_show_controls">Hiện bảng điều khiển</string>
+
+    <!-- Voice song picker (Xiaozhi) -->
+    <string name="voice_title">Chọn bài bằng giọng nói</string>
+    <string name="voice_home">Nói tên bài</string>
+    <string name="voice_home_hint">Xiaozhi mở bài cho bạn</string>
+    <string name="voice_unpair">Huỷ ghép nối</string>
+    <string name="voice_mic">Micro</string>
+    <string name="voice_pair_title">Ghép nối với Xiaozhi (một lần)</string>
+    <string name="voice_pair_steps">1. Mở trang xiaozhi.me và đăng nhập.\n2. Chọn “Thêm thiết bị”.\n3. Nhập mã ở trên. Ứng dụng sẽ tự kết nối.</string>
+    <string name="voice_examples">Thử nói:\n• “Mở bài Ngôi sao lấp lánh”\n• “Có những bài nào?”\n• “Chơi bài Chúc mừng sinh nhật luôn nhé”</string>
+    <string name="voice_state_connecting">Đang kết nối Xiaozhi…</string>
+    <string name="voice_state_pairing">Chờ ghép nối…</string>
+    <string name="voice_state_ready">Sẵn sàng</string>
+    <string name="voice_state_listening">Đang nghe… mời bạn nói tên bài</string>
+    <string name="voice_state_thinking">Xiaozhi đang nghĩ…</string>
+    <string name="voice_state_speaking">Xiaozhi đang nói…</string>
+    <string name="voice_state_offline">Mất kết nối, đang thử lại…</string>
+    <string name="voice_hint_tap">Chạm micro để nói</string>
+    <string name="voice_hint_stop">Chạm để dừng nghe</string>
+    <string name="voice_hint_barge">Chạm để ngắt lời và nói tiếp</string>
+    <string name="voice_you">Bạn</string>
+    <string name="voice_bot">Xiaozhi</string>
+    <string name="voice_opening">Đang mở “%1$s”…</string>
+    <string name="voice_need_mic">Cần quyền micro để nói chuyện với Xiaozhi.</string>
+    <string name="voice_auth_failed">Thiết bị đã bị gỡ khỏi xiaozhi.me. Hãy ghép nối lại.</string>
+    <string name="voice_pair_error">Ghép nối lỗi: %1$s</string>
+
+    <!-- WS2812B strip (ESP32 + FastLED) -->
+    <string name="set_led_transport_ws2812">ESP32 (WROOM-32, S3-DevKitC N16R8 hoặc C3 Super Mini) + WS2812B (Bluetooth, USB, Wi-Fi) – ứng dụng điều khiển từng đèn</string>
+    <string name="set_ws_section">Dải WS2812B (ESP32-WROOM-32 / S3 / C3 / WLED / Art-Net)</string>
+    <string name="set_ws_density">Mật độ đèn của dải</string>
+    <string name="set_ws_keys">Số phím của đàn</string>
+    <string name="set_ws_reversed">Đầu cắm dây (DIN) ở phía phím cao</string>
+    <string name="set_ws_reversed_summary">Bật nếu đèn chạy ngược chiều phím đàn</string>
+    <string name="set_ws_hint">Dùng với mạch ESP32-WROOM-32, ESP32-S3-DevKitC N16R8 hoặc ESP32-C3 Super Mini nạp chương trình LedPianoStrip (hiện trong danh sách là “LED Piano Strip · ESP32-WROOM-32”, “LED Piano Strip S3 · ESP32-S3-DevKitC” hoặc “LED Piano Strip C3 · ESP32-C3 Super Mini”), WLED hoặc SP801E (Art-Net). Mạch S3 có 2 cổng USB-C, cắm cổng nào cũng được. Số đèn và vị trí căn chỉnh nằm trong “Căn đèn LED”.</string>
+    <string name="align_key_hint_ws">Đèn đang sáng ở phím Đô giữa (C4). Nhấn ◀ hoặc ▶ để dời cả dải từng đèn một, tới khi đèn nằm ngay trên phím Đô giữa. Nút “Thử đèn” chạy đúng ví dụ FastLED (đèn 0, 1, 2, 5, 9, 14, 19) rồi chạy qua từng phím.</string>
+    <string name="align_ws_value">Đèn đầu: %1$d</string>
+
+    <!-- WLED over Wi-Fi -->
+    <string name="lb_wled">WLED (Wi-Fi)</string>
+    <string name="lb_wled_hint">Bộ WLED cùng mạng Wi-Fi tự hiện trong danh sách thiết bị. Nếu không thấy, nhập địa chỉ IP của bộ điều khiển WLED (xem trong ứng dụng WLED hoặc trang quản lý Wi-Fi). Điện thoại và WLED phải dùng cùng mạng Wi-Fi.</string>
+    <string name="set_led_transport_wled">WLED (Wi-Fi) – điện thoại điều khiển từng đèn</string>
+    <string name="lb_wifi">Cách khác (Wi-Fi, Arduino)</string>
+    <string name="lb_artnet">Art-Net – BanlanX SP801E</string>
+    <string name="lb_artnet_hint">Bật chế độ Art-Net cho SP801E trong ứng dụng BanlanX, rồi nhập địa chỉ IP của nó. Khi điện thoại nối thẳng vào Wi-Fi “SP801E_…” (mật khẩu 12345678) thì IP thường là 192.168.4.1. Thêm “/1” nếu dải bắt đầu ở universe 1 (ví dụ 192.168.4.1/1).</string>
+
+    <!-- Learning features (hot spots, LED feedback, recording, daily plan, ESP32) -->
+    <string name="bt_hot_spot">🎯 Chỗ khó</string>
+    <string name="cd_hot_spot">Luyện chỗ khó: lặp lại ô nhịp hay sai nhất, chậm lại</string>
+    <string name="bt_record">⏺ Ghi âm</string>
+    <string name="bt_record_stop">⏹ Dừng ghi</string>
+    <string name="cd_record">Ghi âm phần bạn chơi thành tệp MIDI</string>
+    <string name="hot_none">Chưa có chỗ khó — nối đàn và chơi thử, ứng dụng sẽ tự tìm</string>
+    <string name="hot_start">Luyện ô nhịp %1$d ở %2$d%% · tự tăng tốc sau 3 lần đúng</string>
+    <string name="hot_worst">Chỗ khó nhất: ô nhịp %1$d — bấm 🎯 để luyện riêng.</string>
+    <string name="rec_started">Đang ghi âm phần bạn chơi…</string>
+    <string name="rec_empty">Chưa ghi được nốt nào — hãy nối đàn</string>
+    <string name="rec_saved_title">Đã ghi âm</string>
+    <string name="rec_saved_msg">Đã lưu %1$d nốt bạn chơi thành tệp MIDI. Bản ghi có trong danh sách bài của bạn.</string>
+    <string name="rec_open">Mở để nghe lại</string>
+    <string name="rec_prefix">Bản ghi: %1$s</string>
+    <string name="opt_led">Đèn LED</string>
+    <string name="opt_led_feedback">Nháy màu khi bấm: xanh = đúng lúc, cam = sớm/trễ, đỏ = sai phím</string>
+    <string name="opt_led_preview">Phím kế tiếp sáng mờ trước</string>
+    <string name="opt_led_dynamics">Nốt mạnh sáng hơn, nốt nhẹ mờ hơn</string>
+    <string name="opt_send_esp32">Gửi bài này vào ESP32 (tập không cần điện thoại)</string>
+    <string name="esp32_need">Hãy kết nối mạch ESP32 (LED Piano Strip) trước</string>
+    <string name="esp32_sent">Đã gửi %1$d nốt vào thư viện bài của mạch ESP32. Trên mạch: nhấn BOOT để luyện bài này (đèn chờ bạn bấm đúng phím trên đàn), nhấn 2 lần nhanh để đổi bài, nhấn giữ để dừng. Danh sách bài: trang http://ledpiano.local</string>
+    <string name="esp32_piano">Đàn (qua ESP32)</string>
+    <string name="plan_title">Kế hoạch hôm nay · 5–10 phút</string>
+    <string name="plan_item">%1$s:  %2$s   ▶</string>
+    <string name="usb_connecting">Đang kết nối dải đèn qua cáp USB…</string>
+    <string name="set_led_transport_sp801e">SP801E (BanlanX, Wi-Fi Art-Net) – điện thoại điều khiển từng đèn</string>
+    <string name="set_led_transport_sp802e">SP802E (BanlanX, Bluetooth) – cả dải đổi màu theo tay (thử nghiệm)</string>
+    <string name="set_led_transport_sp630e">SP630E (BanlanX, Bluetooth) – cả dải đổi màu theo tay</string>
+    <string name="lb_e131">E1.31 / sACN (Wi-Fi)</string>
+    <string name="lb_e131_hint">Bộ điều khiển đèn Wi-Fi dùng E1.31 (WLED, ESPixelStick, Falcon…, hoặc mạch ESP32 LED Piano Strip). Nhập IP; thêm “/2” nếu đèn đầu tiên ở universe 2.</string>
+    <string name="lb_ddp">DDP (Wi-Fi)</string>
+    <string name="lb_ddp_hint">Bộ điều khiển đèn Wi-Fi dùng DDP (WLED, ESPixelStick, xLights…, hoặc mạch ESP32 LED Piano Strip). Nhập IP.</string>
+    <string name="lb_strip_wifi">ESP32 LED Piano Strip qua Wi-Fi</string>
+    <string name="lb_strip_wifi_hint">Mạch ESP32 cùng mạng Wi-Fi tự hiện trong danh sách. Nếu không thấy, nhập IP của mạch (xem trang http://ledpiano.local hoặc Serial Monitor). Qua Wi-Fi vẫn dùng được mọi tính năng: lưu bài, đàn Bluetooth, nháy xanh/đỏ.</string>
+    <string name="lb_adalight_bt">Arduino (Adalight) – Bluetooth HC-05/HC-06</string>
+    <string name="lb_adalight_none">Chưa có module HC-05/HC-06 nào được ghép đôi. Mở Cài đặt → Bluetooth của điện thoại, ghép đôi module (mã PIN 1234 hoặc 0000), rồi thử lại. Arduino cắm cáp USB thì hiện ngay trong danh sách.</string>
+    <string name="set_led_transport_e131">E1.31 / sACN (Wi-Fi) – điều khiển từng đèn</string>
+    <string name="set_led_transport_ddp">DDP (Wi-Fi) – điều khiển từng đèn</string>
+    <string name="set_led_transport_adalight">Arduino Uno/Nano – Adalight (USB / HC-05) – điều khiển từng đèn</string>
+    <string name="home_quick">Nhanh</string>
+    <string name="home_open_midi">+ Mở file MIDI</string>
+    <string name="kb_strip_info">Dải LED · %1$d đèn</string>
+    <string name="kb_one_key_one_led">1 phím = 1 đèn</string>
+</resources>
