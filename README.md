@@ -1,5 +1,9 @@
 # LED Piano
 
+[![LED Piano demo video](https://img.youtube.com/vi/5te3okVcKYU/maxresdefault.jpg)](https://www.youtube.com/watch?v=5te3okVcKYU)
+
+**▶ Watch the demo video** — [youtube.com/watch?v=5te3okVcKYU](https://www.youtube.com/watch?v=5te3okVcKYU)
+
 Learn piano with a **WS2812B LED strip above the keys**. The app plays the song, lights each key you
 should press next (green = right, red = wrong in instant-feedback mode), and listens to your digital
 piano, MIDI, or the microphone.
