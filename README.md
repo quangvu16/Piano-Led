@@ -18,15 +18,7 @@ One folder, five parts:
 
 ## How it works
 
-```
- MIDI / Bluetooth piano / mic ──►  App (Android · iOS · Mac · Python)
-                                        │
-                     Bluetooth LE · USB · Wi-Fi (TCP 7777) · WLED · Art-Net · E1.31 · DDP
-                                        ▼
-                              ESP32 + WS2812B strip over the keys
-                                        │
-                              one LED per key lights up
-```
+![Project overview: input → app → connection → ESP32 firmware → LED strip](docs/project-overview.svg)
 
 The apps find the strip by themselves (Bluetooth LE advertisement, USB serial, or mDNS/UDP discovery
 over Wi-Fi). Strip settings — density, key count, LED count, alignment, direction, hand colours — are
@@ -49,6 +41,8 @@ Full details of every connection method, the `A5 …` message protocol and the f
 | 330 Ω resistor + 1000 µF / 16 V capacitor | protects data line, smooths supply |
 
 ### Standard wiring (ESP32-WROOM-32 and S3)
+
+![Wiring diagram: ESP32 GPIO 16 through 330 Ω to strip DIN; 5 V supply to strip 5 V with 1000 µF capacitor; all grounds joined](docs/wiring.svg)
 
 ```
 ESP32 GPIO 16 ──330 Ω──► DIN   (strip input end; arrow points away from it)
@@ -75,6 +69,8 @@ Build: `cd LedPianoApp && ./gradlew assembleDebug` →
 `app/build/outputs/apk/debug/app-debug.apk`
 (or open in Android Studio). Package `com.ledpiano.app`.
 
+![Android app pages: Home, Player, Lessons, LED Align, Keyboard, Settings, Voice, USB attach](docs/android-pages.svg)
+
 | Screen | Activity | What it does |
 |---|---|---|
 | **Home** (launcher) | `MainActivity` | LED status bar + **Kết nối/Ngắt**, daily goal & streak card (week bars), **Tiếp tục bài**, today's plan (5-level course), quick buttons — **Bài học**, **Nói tên bài** (voice), **Bàn phím đàn**, **Căn đèn LED** — and *Bài hát của bạn* songs list with **Thêm bài hát** (.mid / MusicXML import) |
@@ -98,6 +94,8 @@ Build: open `LedPianoApple/LedPiano.xcodeproj` in Xcode 16+, pick a team under
 One target builds for **iOS 17+** and **macOS 14+**.
 
 Navigation is a `NavigationStack` from `RootView` with sheets on top:
+
+![iOS/Mac app pages: Home pushes Lessons, Player and LED wizard; sheets for Settings, BLE, Voice, Options, Instrument and MIDI pairing](docs/ios-pages.svg)
 
 | Screen | Type | What it does |
 |---|---|---|

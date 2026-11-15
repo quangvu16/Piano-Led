@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .ph { fill:#ffffff; stroke:#1f2328; stroke-width:1.6; }
+      .hdr { fill:#0969da; }
+      .hdrT { fill:#ffffff; font-size:12.5px; font-weight:700; }
+      .cap { fill:#656d76; font-size:11px; }
+      .ln { fill:#1f2328; font-size:11.5px; }
+      .mut { fill:#656d76; font-size:11.5px; }
+      .box { fill:#f6f8fa; stroke:#d0d7de; }
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="20" y="34" font-size="20" font-weight="700" fill="#1f2328">Android app pages</text>
+  <text x="20" y="56" font-size="13" fill="#656d76">LedPianoApp · Kotlin · activities and how they connect</text>
+
+  <!-- ===== phones ===== -->
+
+  <!-- MainActivity / Home -->
+  <g>
+    <rect class="ph" x="30" y="90" width="240" height="560" rx="18"/>
+    <rect class="hdr" x="30" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="30" y="112" width="240" height="18"/>
+    <text class="hdrT" x="150" y="115" text-anchor="middle">Home · MainActivity</text>
+    <rect class="box" x="46" y="146" width="208" height="54" rx="8"/>
+    <text class="ln" x="58" y="166">LED: Kết nối / Ngắt</text>
+    <text class="mut" x="58" y="186">status bar · Thử đèn</text>
+    <rect class="box" x="46" y="212" width="208" height="64" rx="8"/>
+    <text class="ln" x="58" y="232">streak · hôm nay · week bars</text>
+    <text class="mut" x="58" y="252">Kế hoạch hôm nay (plan)</text>
+    <text class="ln" x="58" y="270" font-weight="700">Tiếp tục bài →</text>
+    <text class="cap" x="46" y="300">QUICK ACTIONS</text>
+    <rect class="box" x="46" y="310" width="99" height="34" rx="17"/>
+    <text class="ln" x="95" y="331" text-anchor="middle" font-weight="700">Bài học</text>
+    <rect class="box" x="155" y="310" width="99" height="34" rx="17"/>
+    <text class="ln" x="204" y="331" text-anchor="middle" font-weight="700">Nói tên bài</text>
+    <rect class="box" x="46" y="352" width="99" height="34" rx="17"/>
+    <text class="ln" x="95" y="373" text-anchor="middle" font-weight="700">Bàn phím</text>
+    <rect class="box" x="155" y="352" width="99" height="34" rx="17"/>
+    <text class="ln" x="204" y="373" text-anchor="middle" font-weight="700">Căn đèn LED</text>
+    <text class="cap" x="46" y="412">YOUR SONGS</text>
+    <rect class="box" x="46" y="422" width="208" height="120" rx="8"/>
+    <text class="ln" x="58" y="444">＋ Thêm bài hát (.mid)</text>
+    <text class="mut" x="58" y="466">Canon in D</text>
+    <text class="mut" x="58" y="486">Twinkle Twinkle</text>
+    <text class="mut" x="58" y="506">Jingle Bells</text>
+    <text class="mut" x="58" y="526">… tap to practice</text>
+    <rect class="box" x="46" y="556" width="208" height="34" rx="17"/>
+    <text class="ln" x="150" y="577" text-anchor="middle" font-weight="700">⚙ Cài đặt (top-right)</text>
+    <text class="cap" x="150" y="626" text-anchor="middle">launcher · portrait + landscape</text>
+  </g>
+
+  <!-- PlayerActivity -->
+  <g>
+    <rect class="ph" x="340" y="90" width="240" height="430" rx="18"/>
+    <rect class="hdr" x="340" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="340" y="112" width="240" height="18"/>
+    <text class="hdrT" x="460" y="115" text-anchor="middle">Practice · PlayerActivity</text>
+    <rect class="box" x="356" y="146" width="208" height="70" rx="8"/>
+    <text class="ln" x="368" y="166">falling notes (piano roll)</text>
+    <text class="ln" x="368" y="186">zoomable keyboard</text>
+    <text class="mut" x="368" y="206">staff · finger numbers</text>
+    <rect class="box" x="356" y="228" width="208" height="34" rx="17"/>
+    <text class="ln" x="460" y="249" text-anchor="middle" font-weight="700">Trái | Cả hai | Phải</text>
+    <rect class="box" x="356" y="272" width="208" height="34" rx="17"/>
+    <text class="ln" x="460" y="293" text-anchor="middle" font-weight="700">Speed 25–100 % · −/＋</text>
+    <rect class="box" x="356" y="316" width="208" height="40" rx="8"/>
+    <text class="ln" x="460" y="341" text-anchor="middle" font-weight="700">↺ Restart · ▶ Play · Repeat</text>
+    <rect class="box" x="356" y="366" width="208" height="40" rx="8"/>
+    <text class="ln" x="460" y="384" text-anchor="middle" font-weight="700">⚙ Options sheet</text>
+    <text class="mut" x="460" y="400" text-anchor="middle">Wait/Step · lights · labels · count-in</text>
+    <rect class="box" x="356" y="416" width="208" height="40" rx="8"/>
+    <text class="ln" x="460" y="434" text-anchor="middle" font-weight="700">Send to ESP32 · LED feedback</text>
+    <text class="mut" x="460" y="450" text-anchor="middle">input source · Bluetooth MIDI</text>
+    <text class="cap" x="460" y="496" text-anchor="middle">singleTop · keeps rotation</text>
+  </g>
+
+  <!-- LessonsActivity -->
+  <g>
+    <rect class="ph" x="640" y="90" width="240" height="330" rx="18"/>
+    <rect class="hdr" x="640" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="640" y="112" width="240" height="18"/>
+    <text class="hdrT" x="760" y="115" text-anchor="middle">Lessons · LessonsActivity</text>
+    <text class="ln" x="656" y="162" font-weight="700">Lộ trình 5 cấp độ</text>
+    <rect class="box" x="656" y="174" width="208" height="30" rx="6"/>
+    <text class="ln" x="666" y="194">Cấp 1 · Five fingers L/R</text>
+    <rect class="box" x="656" y="210" width="208" height="30" rx="6"/>
+    <text class="ln" x="666" y="230">Cấp 2 · Twinkle, Butterflies</text>
+    <rect class="box" x="656" y="246" width="208" height="30" rx="6"/>
+    <text class="ln" x="666" y="266">Cấp 3–5 · both hands …</text>
+    <text class="mut" x="656" y="300">Bài hát Việt Nam · Tiếng Anh</text>
+    <text class="mut" x="656" y="322">Bài mẫu khác</text>
+    <rect class="box" x="656" y="340" width="208" height="34" rx="17"/>
+    <text class="ln" x="760" y="361" text-anchor="middle" font-weight="700">tap song → Player</text>
+    <text class="cap" x="760" y="398" text-anchor="middle">progress: x/y done per level</text>
+  </g>
+
+  <!-- LedAlignActivity -->
+  <g>
+    <rect class="ph" x="940" y="90" width="240" height="330" rx="18"/>
+    <rect class="hdr" x="940" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="940" y="112" width="240" height="18"/>
+    <text class="hdrT" x="1060" y="115" text-anchor="middle">LED Align · LedAlignActivity</text>
+    <rect class="box" x="956" y="146" width="208" height="54" rx="8"/>
+    <text class="ln" x="968" y="166">1. Số đèn trên dải − / ＋</text>
+    <text class="mut" x="968" y="186">last LED lights at strip end</text>
+    <rect class="box" x="956" y="212" width="208" height="54" rx="8"/>
+    <text class="ln" x="968" y="232">2. Đặt đèn lên Đô giữa ◀ ▶</text>
+    <text class="mut" x="968" y="252">Sáng Đô giữa (middle C)</text>
+    <rect class="box" x="956" y="278" width="208" height="54" rx="8"/>
+    <text class="ln" x="968" y="298">3. Chiều &amp; mật độ dải</text>
+    <text class="mut" x="968" y="318">direction · LEDs per key</text>
+    <rect class="box" x="956" y="344" width="208" height="34" rx="17"/>
+    <text class="ln" x="1060" y="365" text-anchor="middle" font-weight="700">Thử đèn (FastLED test)</text>
+    <text class="cap" x="1060" y="398" text-anchor="middle">also reachable from Cài đặt</text>
+  </g>
+
+  <!-- KeyboardActivity -->
+  <g>
+    <rect class="ph" x="340" y="560" width="240" height="170" rx="18"/>
+    <rect class="hdr" x="340" y="560" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="340" y="582" width="240" height="18"/>
+    <text class="hdrT" x="460" y="585" text-anchor="middle">Keyboard · KeyboardActivity</text>
+    <text class="ln" x="356" y="626">touch keys to play</text>
+    <text class="mut" x="356" y="646">LED lights on the strip while held</text>
+    <text class="mut" x="356" y="666">◀ Trầm hơn / Cao hơn ▶</text>
+    <rect class="box" x="356" y="678" width="208" height="34" rx="17"/>
+    <text class="ln" x="460" y="699" text-anchor="middle" font-weight="700">Nối đèn LED</text>
+  </g>
+
+  <!-- SettingsActivity -->
+  <g>
+    <rect class="ph" x="640" y="470" width="240" height="260" rx="18"/>
+    <rect class="hdr" x="640" y="470" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="640" y="492" width="240" height="18"/>
+    <text class="hdrT" x="760" y="495" text-anchor="middle">Settings · SettingsActivity</text>
+    <text class="ln" x="656" y="536" font-weight="700">LED</text>
+    <text class="mut" x="656" y="556">transport · effect · brightness</text>
+    <text class="mut" x="656" y="576">zones · length · auto-reconnect</text>
+    <text class="ln" x="656" y="602" font-weight="700">WS2812B strip</text>
+    <text class="mut" x="656" y="622">layout · count · density · keys</text>
+    <text class="ln" x="656" y="648" font-weight="700">Hand colours · Sound</text>
+    <text class="mut" x="656" y="668">instrument · volume</text>
+    <rect class="box" x="656" y="680" width="208" height="34" rx="17"/>
+    <text class="ln" x="760" y="701" text-anchor="middle" font-weight="700">→ Căn đèn LED</text>
+  </g>
+
+  <!-- VoiceActivity -->
+  <g>
+    <rect class="ph" x="940" y="470" width="240" height="260" rx="18"/>
+    <rect class="hdr" x="940" y="470" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="940" y="492" width="240" height="18"/>
+    <text class="hdrT" x="1060" y="495" text-anchor="middle">Voice · voice.VoiceActivity</text>
+    <rect class="box" x="956" y="526" width="208" height="44" rx="8"/>
+    <text class="mut" x="966" y="544">user: “Mở bài Chúc mừng”</text>
+    <text class="ln" x="966" y="562">bot: opening “…”</text>
+    <text class="ln" x="956" y="596" font-weight="700">🎤 Nói tên bài (Xiaozhi)</text>
+    <text class="mut" x="956" y="618">pair once: 6-digit code</text>
+    <text class="mut" x="956" y="638">at xiaozhi.me</text>
+    <text class="mut" x="956" y="664">list songs · open · autoplay</text>
+    <rect class="box" x="956" y="680" width="208" height="34" rx="17"/>
+    <text class="ln" x="1060" y="701" text-anchor="middle" font-weight="700">opens Player</text>
+  </g>
+
+  <!-- ===== arrows from Home ===== -->
+  <!-- trunk -->
+  <path d="M 270 370 H 305 V 300" fill="none" stroke="#57606a" stroke-width="1.8"/>
+  <path d="M 305 300 H 340" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 V 645 H 340" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 H 640" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 H 760 V 470" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 H 940" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 H 1060 V 470" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <circle cx="305" cy="300" r="4" fill="#57606a"/>
+  <circle cx="305" cy="370" r="4" fill="#57606a"/>
+
+  <text class="cap" x="316" y="292">tap song / Tiếp tục bài</text>
+  <text class="cap" x="316" y="637">quick action</text>
+  <text class="cap" x="560" y="292">Bài học</text>
+  <text class="cap" x="770" y="462">Căn đèn LED</text>
+  <text class="cap" x="855" y="292">Cài đặt ⚙</text>
+  <text class="cap" x="1070" y="462">Nói tên bài</text>
+
+  <!-- UsbAttach note -->
+  <rect class="box" x="30" y="672" width="240" height="58" rx="8" stroke-dasharray="4 3"/>
+  <text class="cap" x="46" y="694" font-weight="700">UsbAttachActivity (no UI)</text>
+  <text class="cap" x="46" y="712">plugs in the ESP32 by USB-OTG</text>
+  <text class="cap" x="46" y="726">→ connects, then closes</text>
+</svg>

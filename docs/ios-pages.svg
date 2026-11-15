@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .ph { fill:#ffffff; stroke:#1f2328; stroke-width:1.6; }
+      .hdr { fill:#8250df; }
+      .hdrT { fill:#ffffff; font-size:12.5px; font-weight:700; }
+      .cap { fill:#656d76; font-size:11px; }
+      .ln { fill:#1f2328; font-size:11.5px; }
+      .mut { fill:#656d76; font-size:11.5px; }
+      .box { fill:#f6f8fa; stroke:#d0d7de; }
+      .sheet { fill:#fffbeb; stroke:#d4a72c; stroke-width:1.4; }
+    </style>
+  </defs>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="20" y="34" font-size="20" font-weight="700" fill="#1f2328">iOS / Mac app pages</text>
+  <text x="20" y="56" font-size="13" fill="#656d76">LedPianoApple · SwiftUI · NavigationStack routes and sheets (iOS 17+ / macOS 14+)</text>
+
+  <!-- ===== Home (root) ===== -->
+  <g>
+    <rect class="ph" x="30" y="90" width="240" height="560" rx="18"/>
+    <rect class="hdr" x="30" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="30" y="112" width="240" height="18"/>
+    <text class="hdrT" x="150" y="115" text-anchor="middle">RootView → HomeView</text>
+    <rect class="box" x="46" y="146" width="208" height="54" rx="8"/>
+    <text class="ln" x="58" y="166">LED card: Kết nối / Ngắt</text>
+    <text class="mut" x="58" y="186">Thử đèn · Căn đèn với phím</text>
+    <rect class="box" x="46" y="212" width="208" height="64" rx="8"/>
+    <text class="ln" x="58" y="232">streak · hôm nay · week bars</text>
+    <text class="mut" x="58" y="252">Kế hoạch hôm nay (plan)</text>
+    <text class="ln" x="58" y="270" font-weight="700">Tiếp tục bài →</text>
+    <text class="cap" x="46" y="300">ACTIONS</text>
+    <rect class="box" x="46" y="310" width="208" height="34" rx="17"/>
+    <text class="ln" x="150" y="331" text-anchor="middle" font-weight="700">🎤 Nói tên bài (Xiaozhi)</text>
+    <rect class="box" x="46" y="352" width="99" height="34" rx="17"/>
+    <text class="ln" x="95" y="373" text-anchor="middle" font-weight="700">Bài học</text>
+    <rect class="box" x="155" y="352" width="99" height="34" rx="17"/>
+    <text class="ln" x="204" y="373" text-anchor="middle" font-weight="700">Cài đặt</text>
+    <text class="cap" x="46" y="412">YOUR SONGS</text>
+    <rect class="box" x="46" y="422" width="208" height="120" rx="8"/>
+    <text class="ln" x="58" y="444">＋ import .mid / MusicXML</text>
+    <text class="mut" x="58" y="466">Canon in D</text>
+    <text class="mut" x="58" y="486">Twinkle Twinkle</text>
+    <text class="mut" x="58" y="506">Jingle Bells</text>
+    <text class="mut" x="58" y="526">swipe → Xóa (delete)</text>
+    <text class="cap" x="150" y="586" text-anchor="middle">fileImporter · portrait + landscape</text>
+    <text class="cap" x="150" y="606" text-anchor="middle">one target: iPhone · iPad · Mac</text>
+  </g>
+
+  <!-- ===== Push destinations ===== -->
+
+  <!-- LessonsView -->
+  <g>
+    <rect class="ph" x="340" y="90" width="240" height="330" rx="18"/>
+    <rect class="hdr" x="340" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="340" y="112" width="240" height="18"/>
+    <text class="hdrT" x="460" y="115" text-anchor="middle">push: LessonsView</text>
+    <text class="ln" x="356" y="162" font-weight="700">Lộ trình 5 cấp độ</text>
+    <rect class="box" x="356" y="174" width="208" height="30" rx="6"/>
+    <text class="ln" x="366" y="194">Cấp 1 · Five fingers L/R</text>
+    <rect class="box" x="356" y="210" width="208" height="30" rx="6"/>
+    <text class="ln" x="366" y="230">Cấp 2 · Twinkle, Butterflies</text>
+    <rect class="box" x="356" y="246" width="208" height="30" rx="6"/>
+    <text class="ln" x="366" y="266">Cấp 3–5 · both hands …</text>
+    <text class="mut" x="356" y="300">Bài hát Việt Nam · Tiếng Anh</text>
+    <text class="mut" x="356" y="322">Bài mẫu khác</text>
+    <rect class="box" x="356" y="340" width="208" height="34" rx="17"/>
+    <text class="ln" x="460" y="361" text-anchor="middle" font-weight="700">tap song → Player</text>
+    <text class="cap" x="460" y="398" text-anchor="middle">NavigationLink (Route.lessons)</text>
+  </g>
+
+  <!-- PlayerView -->
+  <g>
+    <rect class="ph" x="340" y="470" width="240" height="260" rx="18"/>
+    <rect class="hdr" x="340" y="470" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="340" y="492" width="240" height="18"/>
+    <text class="hdrT" x="460" y="495" text-anchor="middle">push: PlayerView</text>
+    <rect class="box" x="356" y="526" width="208" height="64" rx="8"/>
+    <text class="ln" x="368" y="546">falling notes · keyboard</text>
+    <text class="ln" x="368" y="566">hands · speed · controls</text>
+    <text class="mut" x="368" y="586">staff · fingers · LoopBar</text>
+    <rect class="box" x="356" y="602" width="208" height="40" rx="8"/>
+    <text class="ln" x="460" y="620" text-anchor="middle" font-weight="700">⚙ OptionsSheet</text>
+    <text class="mut" x="460" y="636" text-anchor="middle">Wait/Step · lights · labels · metronome</text>
+    <rect class="box" x="356" y="652" width="208" height="40" rx="8"/>
+    <text class="ln" x="460" y="670" text-anchor="middle" font-weight="700">LED feedback · input · MIDI</text>
+    <text class="mut" x="460" y="686" text-anchor="middle">Route.player</text>
+  </g>
+
+  <!-- LedWizardView -->
+  <g>
+    <rect class="ph" x="640" y="90" width="240" height="330" rx="18"/>
+    <rect class="hdr" x="640" y="90" width="240" height="40" rx="18"/>
+    <rect class="hdr" x="640" y="112" width="240" height="18"/>
+    <text class="hdrT" x="760" y="115" text-anchor="middle">push: LedWizardView</text>
+    <rect class="box" x="656" y="146" width="208" height="54" rx="8"/>
+    <text class="ln" x="668" y="166">1. Số đèn trên dải − / ＋</text>
+    <text class="mut" x="668" y="186">last LED lights at strip end</text>
+    <rect class="box" x="656" y="212" width="208" height="54" rx="8"/>
+    <text class="ln" x="668" y="232">2. Đặt đèn lên Đô giữa ◀ ▶</text>
+    <text class="mut" x="668" y="252">Sáng Đô giữa (middle C)</text>
+    <rect class="box" x="656" y="278" width="208" height="54" rx="8"/>
+    <text class="ln" x="668" y="298">3. Chiều &amp; mật độ dải</text>
+    <text class="mut" x="668" y="318">direction · LEDs per key</text>
+    <rect class="box" x="656" y="344" width="208" height="34" rx="17"/>
+    <text class="ln" x="760" y="365" text-anchor="middle" font-weight="700">Thử đèn (FastLED test)</text>
+    <text class="cap" x="760" y="398" text-anchor="middle">Route.wizard · "Căn đèn với phím"</text>
+  </g>
+
+  <!-- ===== Sheets ===== -->
+
+  <!-- SettingsSheet -->
+  <g>
+    <rect class="sheet" x="940" y="90" width="240" height="120" rx="16"/>
+    <rect x="1040" y="100" width="40" height="4" rx="2" fill="#d4a72c"/>
+    <text class="ln" x="1060" y="126" text-anchor="middle" font-weight="700">SettingsSheet</text>
+    <text class="mut" x="956" y="150">LED transport · brightness</text>
+    <text class="mut" x="956" y="170">WS2812B layout · hand colours</text>
+    <text class="mut" x="956" y="190">sound · daily goal</text>
+  </g>
+
+  <!-- BlePicker -->
+  <g>
+    <rect class="sheet" x="940" y="230" width="240" height="100" rx="16"/>
+    <rect x="1040" y="240" width="40" height="4" rx="2" fill="#d4a72c"/>
+    <text class="ln" x="1060" y="266" text-anchor="middle" font-weight="700">BlePicker</text>
+    <text class="mut" x="956" y="290">scan &amp; connect the ESP32</text>
+    <text class="mut" x="956" y="310">CoreBluetooth · test lights</text>
+  </g>
+
+  <!-- VoiceView -->
+  <g>
+    <rect class="sheet" x="940" y="350" width="240" height="120" rx="16"/>
+    <rect x="1040" y="360" width="40" height="4" rx="2" fill="#d4a72c"/>
+    <text class="ln" x="1060" y="386" text-anchor="middle" font-weight="700">VoiceView 🎤</text>
+    <rect class="box" x="956" y="398" width="208" height="34" rx="8"/>
+    <text class="mut" x="966" y="412">“Mở bài Chúc mừng…”</text>
+    <text class="ln" x="966" y="428">→ opens song, optional autoplay</text>
+    <text class="mut" x="956" y="454">Xiaozhi · 6-digit pairing code</text>
+  </g>
+
+  <!-- OptionsSheet -->
+  <g>
+    <rect class="sheet" x="940" y="500" width="240" height="110" rx="16"/>
+    <rect x="1040" y="510" width="40" height="4" rx="2" fill="#d4a72c"/>
+    <text class="ln" x="1060" y="536" text-anchor="middle" font-weight="700">OptionsSheet (from Player)</text>
+    <text class="mut" x="956" y="560">practice mode · lights · labels</text>
+    <text class="mut" x="956" y="580">count-in · metronome · staff</text>
+    <text class="mut" x="956" y="600">instrument · input · LED</text>
+  </g>
+
+  <!-- InstrumentPicker + pairing -->
+  <g>
+    <rect class="sheet" x="940" y="630" width="240" height="100" rx="16"/>
+    <rect x="1040" y="640" width="40" height="4" rx="2" fill="#d4a72c"/>
+    <text class="ln" x="1060" y="666" text-anchor="middle" font-weight="700">InstrumentPicker · BT MIDI</text>
+    <text class="mut" x="956" y="690">choose the synth sound</text>
+    <text class="mut" x="956" y="710">pair a Bluetooth-MIDI piano</text>
+  </g>
+
+  <!-- ===== arrows ===== -->
+  <!-- Home → pushes (solid) -->
+  <path d="M 270 370 H 305 V 300 H 340" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 V 600 H 340" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <path d="M 305 300 H 640" fill="none" stroke="#57606a" stroke-width="1.8" marker-end="url(#arr)"/>
+  <circle cx="305" cy="300" r="4" fill="#57606a"/>
+  <circle cx="305" cy="370" r="4" fill="#57606a"/>
+  <text class="cap" x="316" y="292">tap song / Tiếp tục bài</text>
+  <text class="cap" x="316" y="592">Bài học</text>
+  <text class="cap" x="470" y="292">Căn đèn với phím</text>
+
+  <!-- Home → sheets (dashed) -->
+  <path d="M 270 200 H 305 V 150 H 940" fill="none" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <path d="M 305 150 V 280 H 940" fill="none" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <path d="M 305 150 V 410 H 940" fill="none" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <circle cx="305" cy="150" r="4" fill="#b58900"/>
+  <circle cx="305" cy="200" r="4" fill="#b58900"/>
+  <text class="cap" x="600" y="142" fill="#b58900">.sheet (Cài đặt)</text>
+  <text class="cap" x="600" y="272" fill="#b58900">.sheet (Kết nối LED)</text>
+  <text class="cap" x="600" y="402" fill="#b58900">.sheet (Nói tên bài)</text>
+
+  <!-- Player → sheets (dashed) -->
+  <path d="M 580 560 H 610 V 540 H 940" fill="none" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <path d="M 610 540 V 680 H 940" fill="none" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr)"/>
+  <circle cx="610" cy="540" r="4" fill="#b58900"/>
+  <circle cx="610" cy="560" r="4" fill="#b58900"/>
+  <text class="cap" x="660" y="532" fill="#b58900">.sheet</text>
+  <text class="cap" x="660" y="672" fill="#b58900">.sheet</text>
+
+  <!-- legend -->
+  <line x1="640" y1="726" x2="680" y2="726" stroke="#57606a" stroke-width="1.8"/>
+  <text class="cap" x="688" y="730">push (NavigationStack)</text>
+  <line x1="850" y1="726" x2="890" y2="726" stroke="#b58900" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text class="cap" x="898" y="730">sheet</text>
+</svg>

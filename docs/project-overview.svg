@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="430" fill="#ffffff"/>
+  <text x="20" y="34" font-size="20" font-weight="700" fill="#1f2328">LED Piano — project overview</text>
+
+  <!-- column labels -->
+  <text x="120" y="84" font-size="11.5" fill="#656d76" text-anchor="middle" letter-spacing="1">INPUT</text>
+  <text x="360" y="84" font-size="11.5" fill="#65606a" text-anchor="middle" letter-spacing="1">APP</text>
+  <text x="600" y="84" font-size="11.5" fill="#656d76" text-anchor="middle" letter-spacing="1">CONNECTION</text>
+  <text x="840" y="84" font-size="11.5" fill="#656d76" text-anchor="middle" letter-spacing="1">FIRMWARE</text>
+  <text x="1080" y="84" font-size="11.5" fill="#656d76" text-anchor="middle" letter-spacing="1">HARDWARE</text>
+
+  <!-- box 1: input -->
+  <rect x="20" y="94" width="200" height="270" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="120" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">Sound &amp; MIDI</text>
+  <line x1="36" y1="138" x2="204" y2="138" stroke="#d0d7de"/>
+  <text x="120" y="174" font-size="13" fill="#1f2328" text-anchor="middle">Bluetooth MIDI piano</text>
+  <text x="120" y="200" font-size="13" fill="#1f2328" text-anchor="middle">USB digital piano</text>
+  <text x="120" y="226" font-size="13" fill="#1f2328" text-anchor="middle">Microphone (1 note)</text>
+  <text x="120" y="252" font-size="13" fill="#1f2328" text-anchor="middle">page-turner pedal</text>
+
+  <!-- box 2: apps -->
+  <rect x="260" y="94" width="200" height="270" rx="12" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="360" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">Apps</text>
+  <line x1="276" y1="138" x2="444" y2="138" stroke="#b6e3ff"/>
+  <text x="360" y="174" font-size="13" fill="#1f2328" text-anchor="middle">Android (Kotlin)</text>
+  <text x="360" y="200" font-size="13" fill="#1f2328" text-anchor="middle">iPhone · iPad · Mac</text>
+  <text x="360" y="226" font-size="13" fill="#1f2328" text-anchor="middle">(SwiftUI)</text>
+  <text x="360" y="260" font-size="13" fill="#1f2328" text-anchor="middle">Windows · macOS · Linux</text>
+  <text x="360" y="286" font-size="13" fill="#1f2328" text-anchor="middle">(Python)</text>
+
+  <!-- box 3: connection -->
+  <rect x="500" y="94" width="200" height="270" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="600" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">Connection</text>
+  <line x1="516" y1="138" x2="684" y2="138" stroke="#d0d7de"/>
+  <text x="600" y="174" font-size="13" fill="#1f2328" text-anchor="middle">Bluetooth LE</text>
+  <text x="600" y="200" font-size="13" fill="#1f2328" text-anchor="middle">USB serial</text>
+  <text x="600" y="226" font-size="13" fill="#1f2328" text-anchor="middle">Wi-Fi · TCP 7777</text>
+  <text x="600" y="252" font-size="13" fill="#1f2328" text-anchor="middle">WLED · Art-Net</text>
+  <text x="600" y="278" font-size="13" fill="#1f2328" text-anchor="middle">E1.31 · DDP</text>
+
+  <!-- box 4: firmware -->
+  <rect x="740" y="94" width="200" height="270" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="840" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">ESP32 firmware</text>
+  <line x1="756" y1="138" x2="924" y2="138" stroke="#d0d7de"/>
+  <text x="840" y="174" font-size="13" fill="#1f2328" text-anchor="middle">lights the next key</text>
+  <text x="840" y="200" font-size="13" fill="#1f2328" text-anchor="middle">instant green / red</text>
+  <text x="840" y="226" font-size="13" fill="#1f2328" text-anchor="middle">stores songs offline</text>
+  <text x="840" y="252" font-size="13" fill="#1f2328" text-anchor="middle">web page + OTA</text>
+  <text x="840" y="278" font-size="13" fill="#1f2328" text-anchor="middle">MIDI-piano hub</text>
+
+  <!-- box 5: strip -->
+  <rect x="980" y="94" width="200" height="270" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="1080" y="124" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">WS2812B strip</text>
+  <line x1="996" y1="138" x2="1164" y2="138" stroke="#d0d7de"/>
+  <text x="1080" y="166" font-size="13" fill="#1f2328" text-anchor="middle">one LED per key</text>
+  <!-- LED row -->
+  <circle cx="1041" cy="196" r="11" fill="#2ea043" opacity="0.25"/>
+  <circle cx="999" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1017" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1041" cy="196" r="6" fill="#2ea043"/>
+  <circle cx="1059" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1077" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1095" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1113" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1131" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1149" cy="196" r="5" fill="#adbac7"/>
+  <circle cx="1167" cy="196" r="5" fill="#adbac7"/>
+  <!-- keys -->
+  <g stroke="#1f2328" fill="#ffffff">
+    <rect x="990" y="212" width="18" height="70"/>
+    <rect x="1008" y="212" width="18" height="70"/>
+    <rect x="1026" y="212" width="18" height="70"/>
+    <rect x="1044" y="212" width="18" height="70"/>
+    <rect x="1062" y="212" width="18" height="70"/>
+    <rect x="1080" y="212" width="18" height="70"/>
+    <rect x="1098" y="212" width="18" height="70"/>
+    <rect x="1116" y="212" width="18" height="70"/>
+    <rect x="1134" y="212" width="18" height="70"/>
+    <rect x="1152" y="212" width="18" height="70"/>
+  </g>
+  <g fill="#1f2328">
+    <rect x="1003" y="212" width="11" height="44"/>
+    <rect x="1021" y="212" width="11" height="44"/>
+    <rect x="1057" y="212" width="11" height="44"/>
+    <rect x="1075" y="212" width="11" height="44"/>
+    <rect x="1093" y="212" width="11" height="44"/>
+    <rect x="1129" y="212" width="11" height="44"/>
+    <rect x="1147" y="212" width="11" height="44"/>
+  </g>
+  <text x="1080" y="310" font-size="11.5" fill="#656d76" text-anchor="middle">96–144 LEDs/m</text>
+  <text x="1080" y="330" font-size="11.5" fill="#656d76" text-anchor="middle">≈ 1.25 m for 88 keys</text>
+
+  <!-- arrows -->
+  <line x1="220" y1="229" x2="256" y2="229" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="460" y1="229" x2="496" y2="229" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="700" y1="229" x2="736" y2="229" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="940" y1="229" x2="976" y2="229" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- captions -->
+  <text x="120" y="392" font-size="11.5" fill="#656d76" text-anchor="middle">the app hears you</text>
+  <text x="360" y="392" font-size="11.5" fill="#656d76" text-anchor="middle">one codebase per platform</text>
+  <text x="600" y="392" font-size="11.5" fill="#656d76" text-anchor="middle">the app finds the board itself</text>
+  <text x="840" y="392" font-size="11.5" fill="#656d76" text-anchor="middle">set up entirely in the app</text>
+  <text x="1080" y="392" font-size="11.5" fill="#656d76" text-anchor="middle">one LED above each key</text>
+</svg>
